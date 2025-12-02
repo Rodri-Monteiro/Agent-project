@@ -19,7 +19,7 @@ def query_db(query, args=(), one=False):
 # -----------------------------
 # Função principal da API
 # -----------------------------
-@app.route('/webservice/v1/fn_areceber', methods=['GET'])
+@app.route('/webservice/v1/fn_areceber', methods=['POST'])
 def listar():
 
     # Parâmetros recebidos

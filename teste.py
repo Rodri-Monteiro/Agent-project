@@ -1,6 +1,6 @@
 import requests
 
-url = "http://localhost:5000/webservice/v1/cliente_contrato"
+url = "http://localhost:5000/webservice/v1/fn_areceber"
 
 payload = {
     'qtype': 'id',
@@ -16,8 +16,8 @@ headers = {
     'Content-Type': 'application/json'
 }
 
-response = requests.get(url, params=payload, headers=headers)
+response = requests.post(url, params=payload, headers=headers)
 
-print("Status:", response.status_code)
-print("Resposta JSON:")
+
 print(response.json())
+
